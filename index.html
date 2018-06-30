@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eclient</title>
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/own.css"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projectiorn"/>
+    
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div id="main" style=" height:2600px; width: 100%; position: relative;">
+	<div id="one">hello</div>
+		<div id="trapezoid">  </div> <!--division shape-->
+		
+		<div id="menu" > <!--division menu-->
+			<ul>
+				<li><a href="">FEATURE</a></li>
+				<li><a href="">SERVICES</a></li>
+				<li><a href="">PATNERS<a></li>
+				<li><a href="">TESTIMONIAL</a></li>
+			</ul>
+			<a class="login" href="">Log In</a>
+			<a  class="register" href="" style="top:480px; left:144px; background-color: #98B98D; color:white; ">Register </a>
+		</div>
+	<div id="two" >world
+		<div id="slidebar">
+			<div class="sidebutton">
+<button class=" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="" onclick="plusDivs(1)">&#10095;</button>
+			</div> 
+			<div class="images">
+<img class="mySlides" src="assets/bulb.jpg" style="width:100%">
+<img class="mySlides" src="assets/pc.png" style="width:100%">
+<img class="mySlides" src="assets/bulb.jpg" style="width:100%">
+<img class="mySlides" src="assets/pc.png" style="width:100%">
+			</div>
+		</div>
+
+	</div>
+	<div id="three" style="height: 1100px;>hello </div>
+	<div id="four">world</div>
+	<div id="five">hello</div>
+	
+</div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
